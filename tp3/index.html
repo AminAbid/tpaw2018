@@ -1,33 +1,140 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+<!-- CSS boostrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/popper.min.js"></script>
+<!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/form-jquery-validation.js"></script>
+<script>
+
+</script>
+
+<!-- CSS  -->
+<link rel="stylesheet" type="text/css" href= "style.css"/>
+
+
+
+</head>
+    <body>
+    
+<div class="haut_de_page">	
+	<a href="https://galilee.univ-paris13.fr">
+	 <img src="institut_galilée.jpg" class="imgfac" align="left"> 
+	</a>
+		<b><h1><div align="center"> Saisie de la fiche d'une personne </div></h1></b> 		
+</div>
+
+				<br>
+                <br>
+                <br>
+                
+				<br>
+                
+
+    <fieldset>
+<legend>Bonjour, veuillez remplir le formulaire suivant</legend>
+
+     <div class="container">
+            <form>
+                <br/>
+                <br/>
+                <br/>
+                    <div class="form-group row">
+                      <label for="Inputnom" class="col-sm-2 col-form-label">Nom</label>
+                      <div class="col-sm-5">
+                        <input type="text"  class="form-control" id="Inputnom" placeholder="entrez votre nom">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputprenom" class="col-sm-2 col-form-label">Prénom</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputprenom" placeholder="entrez votre prénom">
+                            </div>
+                    </div>
+                    <div class="form-group row">
+                            <label for="inputdatedenaissance" class="col-sm-2 col-form-label"  z-index : 6>Date de naissance</label>
+                                <div class="col-sm-5">
+                                    <input type="date" class="form-control" id="inputdatedenaissance" placeholder="jj/mm/aa">
+                                 </div>
+                   </div>
+                   <div class="form-group row">
+                        <label for="inputAdresse" class="col-sm-2 col-form-label">Adresse</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputAdresse" placeholder="entrez votre adresse">
+                             </div>
+                  </div>
+                  <div class="form-group row">
+                      
+                        <label for="InputEmail" class="col-sm-2 col-form-label">Mail</label>
+                    <div class="col-sm-5">
+                        <input type="email" class="form-control" id="InputEmail"  placeholder="Entrez votre email"><br/>
+                        <button type="submit" class="btn btn-primary">Valider</button>
+                    </div>              
+                 </div>
+                
+            </form>
+          </fieldset>
+
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+          
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $( function() {
+         
+          $("#inputdatedenaissance").datepicker({
+                  maxDate: '0',
+                  dateFormat: 'dd/mm/yy'
+});
+          
+
+        } );
+        </script>
+    
+</body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+		<footer></footer>
+
+     
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+   
 </html>
