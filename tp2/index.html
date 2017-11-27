@@ -1,33 +1,163 @@
-<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+	<head>
+	<link rel="stylesheet" type="text/css" href= "style_index.css"/>
+	<script type="text/javascript" src="formulaire.js"></script>
+	<title> TP2 AW</title>
+	<meta charset="UTF-8">
+	</head>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+		<body>
+		
+<div class="haut_de_page">	
+	<a href="https://galilee.univ-paris13.fr">	
+	 <img src="institut_galilée.jpg" class="imgfac" align="left"> 
+	</a>
+		<b><h1><div align="center"> Saisie de la fiche d'une personne </div></h1></b> 
+			
+</div>
+<div class="haut_de_page2">
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+<h1>
+<div align="left">		
+<b><u>Presentation</u></b>
+</h1> 
+
+<br>
+<br>
+<br>
+
+<h2>
+Nous avons besoins d'informations sur vous.
+<br>
+</h2>
+
+
+
+
+<div align="left">		
+
+
+
+
+
+<br>
+<br>
+<br>
+<h3>
+<fieldset>
+<legend>Pour se faire, veuillez remplir le formulaire suivant</legend>
+
+<form method="post" action="">
+
+<br>
+<br>
+Vous etes:
+<br>
+<input type="radio" name="homme_femme"/> Un Homme <input type="radio" name="homme_femme"/> Une Femme 
+<br>
+<br>
+Nom:
+<br>
+<input type="text" placeholder="Entrez votre nom" id="nom" required/>
+<br>
+<br>
+Prenom:
+<br>
+<input type="text" placeholder="Entrez votre prenom" id="prenom"/>
+<br>
+<br>
+Date de naissance:
+<br>
+<input type="date" placeholder="JJ/MM/AAAA" id="date"/>
+<br>
+<br>
+Nationalite:
+<br>
+<select>
+	<optgroup>
+		<option/> Francais 
+		<option/> Anglais
+		<option/> Espagnol
+		<option/> Italien
+		<option/> Portugais
+		<option/> Algerien
+		<option/> Marocain
+		<option/> Tunisien
+		<option/> Malien
+		<option/> Senegalais
+		<option/> Chinois
+	</optgroup>
+</select>
+<br>
+<br>
+Adresse:
+<br>
+<input type="texte" placeholder="entrez votre adresse" id="adresse"/>
+<br>
+<br>
+Mail:
+<br>
+<input type="email" placeholder="entrez votre mail" id="mail"/>
+<br>
+<br>
+
+
+</h3>
+
+<font color="red" size="3">
+<div align="center">
+vous avez termine votre saisie
+<input type="button" value="valider" onclick="validation()">
+
+		
+
+</form>
+</fieldset>
+
+
+
+<br>
+<br>
+<br>
+ 
+<div id="error" hidden> </div>
+<div id="resultat" hidden> </div>
+
+<br>
+<br>
+<br>
+
+
+<font color="purple" size="4">
+<div align="left">		
+<a href="index.html"> revenir en haut de page </a>
+</div>
+</font>
+<br>
+
+
+
+
+
+		</body>
+		
+		<footer>
+					
+					
+					
+					
+					
+					
+					
+					</footer>
+
 </html>

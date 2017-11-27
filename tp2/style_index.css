@@ -1,0 +1,72 @@
+h1
+{
+	color: purple;	
+}
+
+h2
+{
+	color: purple;
+}
+
+h3
+{
+	color:purple;	
+}
+
+h4
+{
+	color: purple;	
+}
+
+h5
+{
+	color: purple;
+}
+
+h6
+{
+	color: purple;	
+}
+
+
+
+body
+{
+	background-color: white;
+	
+}
+
+.imgfac{
+	width: 50px;
+	height: 50px;
+
+}
+
+
+.haut_de_page{
+	background-color: #2997ab;
+	height: 70px;
+	padding: 10px;
+}
+.haut_de_page2{
+	background-color:black;
+	height: 32px;	
+}
+
+#error{
+	background-color: pink;
+	padding: 5px;
+	border: 1px solid black;
+}
+#resultat{
+	background-color: lightgreen;
+	padding: 5px;
+}
+
+
+
+footer{
+	background-color: #2997ab;
+	height: 70px;
+	padding: 10px;
+}
